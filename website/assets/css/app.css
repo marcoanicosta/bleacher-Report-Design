@@ -1,3 +1,8 @@
+@font-face {
+  font-family: OPTIAlpine;
+  src: url(../fonts/OPTIAlpine-Bold.otf);
+}
+
 nav {
   background-color: black;
   padding: 14px;
@@ -11,7 +16,7 @@ nav, main, footer{
 }
 
 
-.content {
+.main-hero {
   background-image: url("../images/bestof.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,7 +29,7 @@ nav, main, footer{
   font-family: sans-serif;
 }
 
-article{
+article {
   margin-top: 120px;
   left: 5%;
   position: absolute;
@@ -35,16 +40,11 @@ article{
 
 }
 
-h1{
+h1, h2 {
   margin: 0px;
-  padding-left: 20px
-}
-h2{
-  margin: 0px;
-
 }
 
-.website-logo{
+.website-logo {
 
   width: 44px;
   fill: white;
