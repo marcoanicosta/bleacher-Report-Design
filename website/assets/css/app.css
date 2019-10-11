@@ -1,0 +1,63 @@
+nav {
+  background-color: black;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+}
+
+nav, main, footer{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+.content {
+  background-image: url("../images/bestof.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: inherit;
+  background-color: blue;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+article{
+  margin-top: 120px;
+  left: 5%;
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  height: 45%;
+  bottom: 7%;
+
+}
+
+h1{
+  margin: 0px;
+  padding-left: 20px
+}
+h2{
+  margin: 0px;
+
+}
+
+.website-logo{
+
+  width: 44px;
+  fill: white;
+
+}
+.outer-container{
+  display: block;
+}
+.main-hero{
+  display: block;
+  height: 740px;
+}
+
+.label {
+    background-color: #03fc96;
+}

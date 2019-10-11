@@ -1,0 +1,24 @@
+@font-face {
+  font-family: OPTIAlpine;
+  src: url(OPTIAlpine-Bold.otf);
+}
+
+.eyebrow{
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #03fc96;
+}
+
+.line-breaker{
+  border: 10px solid black;
+  width: 100px;
+  margin-left: 20px;
+}
+
+h1, p, .author{
+  margin-left: 20px;
+}
+
+body{
+  font-family: OPTIAlpine;}
