@@ -2,17 +2,39 @@
   font-family: OPTIAlpine;
   src: url(../fonts/OPTIAlpine-Bold.otf);
 }
+@font-face {
+  font-family: Effra_Std_Rg;
+  src: url(../fonts/Effra_Std_Rg.ttf);
+}
+@font-face {
+  font-family: Effra_Std_Bd;
+  src: url(../fonts/Effra_Std_Bd.ttf);
+}
+@font-face {
+  font-family: HARVATS;
+  src: url(../fonts/HARVATS.ttf);
+}
+@font-face {
+  font-family: Anton-Rg;
+  src: url(../fonts/Anton-Regular.ttf);
+}
+
+/* For desktop: */
+
+html {
+  box-sizing: border-box; /* removes border padding */
+}
 
 nav {
   background-color: black;
-  padding: 14px;
   display: flex;
   align-items: center;
 }
 
-nav, main, footer{
+main {
   padding-right: 20px;
   padding-left: 20px;
+  max-width: 720px;
 }
 
 
@@ -29,6 +51,34 @@ nav, main, footer{
   font-family: sans-serif;
 }
 
+.content-hero {
+  background-image: url("https://img.bleacherreport.net/cms/media/image/cc/23/51/16/78ff/41b3/9eee/290b12dbbb85/crop_exact_GettyImages-1180778918.jpg?h=585&q=90&w=876");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: inherit;
+  background-color: blue;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.footer {
+  margin-top: 80px;
+  display: flex;
+  background-color: black;
+  height: 300px;
+
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
 article {
   margin-top: 120px;
   left: 5%;
@@ -44,20 +94,15 @@ h1, h2 {
   margin: 0px;
 }
 
-.website-logo {
 
-  width: 44px;
-  fill: white;
-
-}
-.outer-container{
+.outer-container {
   display: block;
 }
-.main-hero{
+.main-hero {
   display: block;
   height: 740px;
 }
-
-.label {
-    background-color: #03fc96;
+.content-hero {
+  display: block;
+  height: 740px;
 }

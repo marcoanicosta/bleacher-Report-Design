@@ -1,0 +1,87 @@
+.news-block-space {
+  margin: 40px 0px;
+}
+
+.news-block-space-block {
+  /*height: 300px;*/
+
+  width: 80%;
+  margin: 21px;
+}
+
+
+.news-block-space-block-visual-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-block-space-block-visual-container-text {
+  /*original format*/
+  /*width: 45%;
+  padding: 3px;
+  margin: 10px 0;
+  float: right;
+  font-size: 30px;
+  font-family: Effra_Std_Bd;*/
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  margin-left: 8px;
+  font-size: 40px;
+  font-family: Effra_Std_Bd;
+
+}
+
+.news-block-space-block-visual-container-text > h3 {
+  text-transform: uppercase;
+  font-family: Anton-Rg;
+  margin-bottom: 20px;
+  line-height: 50px;
+
+  word-spacing: -3px;
+  font-weight: 600;
+}
+.news-block-space-block-visual-container-image {
+}
+
+
+.news-block-space-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+.news-block-space-title {
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 15px;
+  font-size: 35px;
+  color: black;
+  margin: 0 auto;
+  padding: 20px 5px;
+  width: auto;
+  height: auto;
+}
+
+
+h3, p {
+  margin: 0;
+}
+
+p {
+  font-family: Effra_Std_Rg;
+  font-size: 15px;
+}
+
+.news-block-space-block-visual-container-image > img {
+  height: auto;
+  width: 100%;
+  margin-right: 10px;
+}

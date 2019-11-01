@@ -1,0 +1,48 @@
+.top-news {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+}
+
+.top-news-news{
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.top-news-news-links {
+  font-family: Effra_Std_Rg;
+  display: inline-block;
+}
+
+.main-label {
+  font-family: Effra_Std_Bd;
+  background-color: #03fc96;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-right: 33px;
+}
+
+.track {
+  text-decoration: none;
+  vertical-align: middle;
+  margin-right: 40px;
+  color: black;
+}
+
+
+.track + .track {
+  padding-left: 40px;
+  border-left: 1px solid #000;
+}
+
+
+.track:hover{
+  color: blue;
+}

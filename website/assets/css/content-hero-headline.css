@@ -1,16 +1,16 @@
-.main-hero {
+.content-hero {
   position: relative;
 }
 
-.main-hero-headline {
+.content-hero-headline {
  background-color: #FFF;
  width: 350px;
  position: absolute;
  bottom: 7%;
- left: 5%;
+ right: 5%;
 }
 
-.main-hero-headline-eyebrow {
+.content-hero-headline-eyebrow {
   font-family: Effra_Std_Bd;
   background-color: #03fc96;
   display: flex;
@@ -19,23 +19,23 @@
   align-items: center;
 }
 
-.main-hero-headline-eyebrow-image {
+.content-hero-headline-eyebrow-image {
   padding-right: 10px;
 }
 
-.main-hero-headline-eyebrow-label {
+.content-hero-headline-eyebrow-label {
   font-weight: 900;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
-.main-hero-headline-title {
+.content-hero-headline-title {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.main-hero-headline-title-text {
+.content-hero-headline-title-text {
   font-family: Anton-Rg;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -43,26 +43,27 @@
   font-size: 50px;
   word-spacing: -3px;
   font-weight: 600;
+ /* transform: scale(1, 2);*/
 }
 
-.main-hero-headline-title-hr {
+.content-hero-headline-title-hr {
  border: 5px solid black;
  background-color: black;
  width: 45px;
  display: inline-block;
 }
 
-.main-hero-headline-eyebrow,
-.main-hero-headline-title {
+.content-hero-headline-eyebrow,
+.content-hero-headline-title {
   padding-left: 28px;
   padding-right: 28px;
 }
 
-.main-hero-credit {
+.content-hero-credit {
   color: white;
   position: absolute;
   bottom: 3%;
-  left: 5%;
+  right: 5%;
   font-family: Effra_Std_Rg;
   font-weight: 700;
   font-style: italic;
