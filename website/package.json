@@ -1,0 +1,15 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Landing page for Bleacher Report",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "MarcoAniCosta"
+  },
+  "author": "Marcolino Nafafe",
+  "license": "ISC"
+}
