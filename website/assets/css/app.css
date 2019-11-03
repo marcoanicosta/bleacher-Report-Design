@@ -19,17 +19,25 @@
   src: url(../fonts/Anton-Regular.ttf);
 }
 
-/* For desktop: */
+
+/* @media screen and (min-width: 600px) {
+
+}
+
+@media screen and  (min-width: 600px) and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+} */
+
+
 
 html {
   box-sizing: border-box; /* removes border padding */
 }
 
-nav {
-  background-color: black;
-  display: flex;
-  align-items: center;
-}
 
 main {
   padding-right: 20px;
@@ -38,18 +46,8 @@ main {
 }
 
 
-.main-hero {
-  background-image: url("../images/bestof.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: inherit;
-  background-color: blue;
-  margin-top: 0px;
-  display: flex;
-  align-items: center;
-  font-family: sans-serif;
-}
+
+
 
 .content-hero {
   background-image: url("https://img.bleacherreport.net/cms/media/image/cc/23/51/16/78ff/41b3/9eee/290b12dbbb85/crop_exact_GettyImages-1180778918.jpg?h=585&q=90&w=876");
@@ -98,10 +96,7 @@ h1, h2 {
 .outer-container {
   display: block;
 }
-.main-hero {
-  display: block;
-  height: 740px;
-}
+
 .content-hero {
   display: block;
   height: 740px;

@@ -4,18 +4,18 @@
   display: flex;
 }
 
-.top-news-news{
+.top-news-links{
   width: auto;
   height: auto;
   margin: 0 auto;
 }
 
-.top-news-news-links {
+.top-news-links-headlines {
   font-family: Effra_Std_Rg;
   display: inline-block;
 }
 
-.main-label {
+.top-news-links-label {
   font-family: Effra_Std_Bd;
   background-color: #03fc96;
   display: inline-block;
