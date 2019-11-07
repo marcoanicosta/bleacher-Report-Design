@@ -10,6 +10,7 @@ var videoOffset = video.offsetWidth + 10;
 console.log(carouselLeft)
 
 var maxOffset = videos.offsetWidth - window.innerWidth + videoOffset/2;
+var videoWidth = video.offsetWidth
 next = 0
 num = 0
 

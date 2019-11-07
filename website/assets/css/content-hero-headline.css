@@ -2,12 +2,24 @@
   position: relative;
 }
 
+.content_hero_container{
+  position: relative;
+}
+
 .content-hero-headline {
  background-color: #FFF;
  width: 350px;
  position: absolute;
  bottom: 7%;
  right: 5%;
+}
+@media screen and (max-width: 1199px) {
+  .content-hero-headline {
+    width: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .content-hero-headline-eyebrow {
@@ -57,6 +69,13 @@
 .content-hero-headline-title {
   padding-left: 28px;
   padding-right: 28px;
+}
+@media screen and (max-width: 1199px) {
+  .content-hero-headline-eyebrow,
+  .content-hero-headline-title {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .content-hero-credit {

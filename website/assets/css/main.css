@@ -22,6 +22,15 @@
  bottom: 7%;
  left: 5%;
 }
+@media screen and (max-width: 1199px) {
+  .main__hero-headline {
+    width: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
 
 .main__hero-headline-eyebrow {
   font-family: Effra_Std_Bd;
@@ -48,6 +57,8 @@
   padding-bottom: 20px;
 }
 
+
+
 .main__hero-headline-title-text {
   font-family: Anton-Rg;
   text-transform: uppercase;
@@ -69,6 +80,13 @@
 .main__hero-headline-title {
   padding-left: 28px;
   padding-right: 28px;
+}
+@media screen and (max-width: 1199px) {
+  .main__hero-headline-eyebrow,
+  .main__hero-headline-title {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .main__hero-credit {

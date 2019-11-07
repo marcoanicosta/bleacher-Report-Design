@@ -31,6 +31,13 @@
   padding-right: 40px;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1199px) {
+  .trending-content-content {
+    flex-direction: column;
+  }
+}
+
+
 
 .trending-content-content-holder {
   min-height: 150px;
@@ -38,6 +45,12 @@
   background-color: #FFF;
   margin-bottom: 20px;
   height: fit-content;
+}
+@media screen and (max-width: 1199px) {
+  .trending-content-content-holder {
+    align-self: center;
+    width: 85%;
+  }
 }
 
 .trending-content-content-holder-title {
@@ -60,4 +73,10 @@
 
 .embed-tweet {
   padding: 10px 7px;
+}
+@media screen and (max-width: 1199px) {
+  .embed-tweet {
+    display: flex;
+    justify-content: center
+  }
 }

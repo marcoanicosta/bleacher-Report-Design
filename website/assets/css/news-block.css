@@ -15,6 +15,17 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1199px) {
+  .news-block-space-block-visual-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .news-block-space-block-visual-container + .news-block-space-block-visual-container{
+    flex-direction: column-reverse;
+  }
+}
+
 
 .news-block-space-block-visual-container-text {
   /*original format*/

@@ -46,16 +46,17 @@
 .video-carousel-content-holders-block-video-holder {
   width: inherit;
   height: inherit;
+  background-color: black;
 }
 
 .video-carousel-content-holders-block-video {
   width: 611px;
   height: 450px;
-  background-color: black;
-  margin-right: 10px;
   flex-shrink: 0;
   display: flex;
   align-items: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .video-carousel-content-holders-arrow {
@@ -92,7 +93,6 @@
   transform: translate(-50%, -50%);
   margin-right: 10px;
   display: none;
-
 }
 .video-carousel-content-holders-icons.center {
 
@@ -101,7 +101,6 @@
 iframe {
   width: inherit;
   height: inherit;
-  display: none;
 }
 .video-carousel-content-holders-block-video-title {
   width: inherit;

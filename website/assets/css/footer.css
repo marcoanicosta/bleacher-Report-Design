@@ -1,0 +1,13 @@
+.footer-container-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.footer-container-logo-image {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.website-logo-container-logo {
+  width: 30%;
+}
