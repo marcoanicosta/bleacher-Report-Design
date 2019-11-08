@@ -23,6 +23,19 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .trending-content-title {
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .trending-content-title {
+    letter-spacing: 8px;
+    font-size: 32px;
+  }
+}
+
+
 .trending-content-content {
   width: 100%;
   display: flex;
@@ -31,7 +44,7 @@
   padding-right: 40px;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 889px) {
   .trending-content-content {
     flex-direction: column;
   }
@@ -46,7 +59,7 @@
   margin-bottom: 20px;
   height: fit-content;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 889px) {
   .trending-content-content-holder {
     align-self: center;
     width: 85%;
