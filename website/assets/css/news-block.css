@@ -26,6 +26,9 @@
   }
 }
 
+.news-block-space-block:nth-child(odd) .news-block-space-block-visual-container {
+  flex-direction: row-reverse;
+}
 
 .news-block-space-block-visual-container-text {
   /*original format*/
@@ -95,29 +98,4 @@ p {
   height: auto;
   width: 100%;
   margin-right: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.news-block-space-block:nth-child(odd) .news-block-space-block-visual-container {
-  flex-direction: row-reverse;
 }
