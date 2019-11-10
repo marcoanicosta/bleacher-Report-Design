@@ -11,5 +11,8 @@
     "url": "MarcoAniCosta"
   },
   "author": "Marcolino Nafafe",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
 }
