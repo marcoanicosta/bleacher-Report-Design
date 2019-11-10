@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile-sass": "node-sass sass/main.scss css/style.css -w"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "MarcoAniCosta"
@@ -14,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }
