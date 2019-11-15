@@ -1,0 +1,1067 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  /* removes border padding */ }
+
+main {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 720px; }
+
+h1, h2 {
+  margin: 0px; }
+
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+@font-face {
+  font-family: OPTIAlpine;
+  src: url(../../assets/fonts/OPTIAlpine-Bold.otf); }
+
+@font-face {
+  font-family: Effra_Std_Rg;
+  src: url(../../assets/fonts/Effra_Std_Rg.ttf); }
+
+@font-face {
+  font-family: Effra_Std_Bd;
+  src: url(../../assets/fonts/Effra_Std_Bd.ttf); }
+
+@font-face {
+  font-family: HARVATS;
+  src: url(../../assets/fonts/HARVATS.ttf); }
+
+@font-face {
+  font-family: Anton-Rg;
+  src: url(../../assets/fonts/Anton-Regular.ttf); }
+
+.header__nav {
+  background-color: black;
+  /* height: 60px; */ }
+  @media screen and (min-width: 1200px) {
+    .header__nav {
+      display: flex; } }
+
+@media screen and (max-width: 1199px) {
+  .header__nav-container {
+    height: 0;
+    visibility: hidden;
+    transition: height 1s ease-out; } }
+
+@media screen and (min-width: 1200px) {
+  .header__nav-container {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between; } }
+
+.header__nav-container.is-open {
+  height: 100%;
+  visibility: visible; }
+
+.header__nav-bar {
+  color: white;
+  list-style: none; }
+  @media screen and (min-width: 1200px) {
+    .header__nav-bar {
+      display: flex;
+      flex-wrap: wrap; } }
+
+.header__nav-link {
+  display: block;
+  font-family: Effra_Std_Rg;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: white; }
+
+.header__nav-link:hover, .header__logo:hover {
+  background-color: #2a2a2a; }
+
+.header__logo {
+  display: flex;
+  height: 100%;
+  padding: 0 10px; }
+
+.header__logo-image {
+  align-self: center;
+  display: block;
+  width: 44px;
+  fill: white; }
+
+@media screen and (min-width: 1200px) {
+  .header__login {
+    /* margin-left: auto;
+      display: flex; */ } }
+
+@media screen and (min-width: 1200px) {
+  .header__nav-toggle {
+    display: none; } }
+
+@media screen and (max-width: 1199px) {
+  .header__main-bar {
+    display: flex;
+    justify-content: space-between; } }
+
+.main__hero {
+  position: relative;
+  background-image: url("../../assets/images/bestof.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: inherit;
+  background-color: blue;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  display: block;
+  height: 740px; }
+
+.main__hero-headline {
+  background-color: #FFF;
+  width: 350px;
+  position: absolute;
+  bottom: 7%;
+  left: 5%; }
+  @media screen and (max-width: 1199px) {
+    .main__hero-headline {
+      width: auto;
+      position: relative;
+      left: 0;
+      bottom: 0; } }
+
+.main__hero-headline-eyebrow {
+  font-family: Effra_Std_Bd;
+  background-color: #03fc96;
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  align-items: center; }
+
+.main__hero-headline-eyebrow-image {
+  padding-right: 10px; }
+
+.main__hero-headline-eyebrow-label {
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.main__hero-headline-title {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.main__hero-headline-title-text {
+  font-family: Anton-Rg;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 56px;
+  font-size: 50px;
+  word-spacing: -3px;
+  font-weight: 600; }
+
+.main__hero-headline-title-hr {
+  border: 5px solid black;
+  background-color: black;
+  width: 45px;
+  display: inline-block; }
+
+.main__hero-headline-eyebrow,
+.main__hero-headline-title {
+  padding-left: 28px;
+  padding-right: 28px; }
+  @media screen and (max-width: 1199px) {
+    .main__hero-headline-eyebrow,
+    .main__hero-headline-title {
+      padding-left: 40px;
+      padding-right: 40px; } }
+
+.main__hero-credit {
+  color: white;
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px; }
+
+@font-face {
+  font-family: OPTIAlpine;
+  src: url(../fonts/OPTIAlpine-Bold.otf); }
+
+@font-face {
+  font-family: Effra_Std_Rg;
+  src: url(../fonts/Effra_Std_Rg.ttf); }
+
+@font-face {
+  font-family: Effra_Std_Bd;
+  src: url(../fonts/Effra_Std_Bd.ttf); }
+
+@font-face {
+  font-family: HARVATS;
+  src: url(../fonts/HARVATS.ttf); }
+
+@font-face {
+  font-family: Anton-Rg;
+  src: url(../fonts/Anton-Regular.ttf); }
+
+/* @media screen and (min-width: 600px) {
+
+}
+
+@media screen and  (min-width: 600px) and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+} */
+* {
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  /* removes border padding */ }
+
+main {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 720px; }
+
+.content-hero {
+  background-image: url("https://img.bleacherreport.net/cms/media/image/cc/23/51/16/78ff/41b3/9eee/290b12dbbb85/crop_exact_GettyImages-1180778918.jpg?h=585&q=90&w=876");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: inherit;
+  background-color: blue;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif; }
+
+.footer {
+  margin-top: 80px;
+  display: flex;
+  background-color: black;
+  height: 300px; }
+
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+article {
+  margin-top: 120px;
+  left: 5%;
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  height: 45%;
+  bottom: 7%; }
+
+h1, h2 {
+  margin: 0px; }
+
+.outer-container {
+  display: block; }
+
+.content-hero {
+  display: block;
+  height: 740px; }
+
+@font-face {
+  font-family: OPTIAlpine;
+  src: url(OPTIAlpine-Bold.otf); }
+
+.eyebrow {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #03fc96; }
+
+.line-breaker {
+  border: 10px solid black;
+  width: 100px;
+  margin-left: 20px; }
+
+h1, p, .author {
+  margin-left: 20px; }
+
+body {
+  font-family: OPTIAlpine; }
+
+.champions-carousel {
+  min-height: 400px;
+  background-color: #f7f74f;
+  padding-bottom: 100px; }
+
+.champions-carousel-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+.champions-carousel-content-title {
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 35px;
+  color: black;
+  margin: 0 auto;
+  padding: 20px 5px;
+  width: auto;
+  height: auto; }
+
+.champions-carousel-show-more {
+  width: 10px;
+  height: 4px;
+  display: none; }
+
+.content-hero {
+  position: relative; }
+
+.content_hero_container {
+  position: relative; }
+
+.content-hero-headline {
+  background-color: #FFF;
+  width: 350px;
+  position: absolute;
+  bottom: 7%;
+  right: 5%; }
+
+@media screen and (max-width: 1199px) {
+  .content-hero-headline {
+    width: auto;
+    position: relative;
+    left: 0;
+    bottom: 0; } }
+
+.content-hero-headline-eyebrow {
+  font-family: Effra_Std_Bd;
+  background-color: #03fc96;
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  align-items: center; }
+
+.content-hero-headline-eyebrow-image {
+  padding-right: 10px; }
+
+.content-hero-headline-eyebrow-label {
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.content-hero-headline-title {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.content-hero-headline-title-text {
+  font-family: Anton-Rg;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 56px;
+  font-size: 50px;
+  word-spacing: -3px;
+  font-weight: 600;
+  /* transform: scale(1, 2);*/ }
+
+.content-hero-headline-title-hr {
+  border: 5px solid black;
+  background-color: black;
+  width: 45px;
+  display: inline-block; }
+
+.content-hero-headline-eyebrow,
+.content-hero-headline-title {
+  padding-left: 28px;
+  padding-right: 28px; }
+
+@media screen and (max-width: 1199px) {
+  .content-hero-headline-eyebrow,
+  .content-hero-headline-title {
+    padding-left: 40px;
+    padding-right: 40px; } }
+
+.content-hero-credit {
+  color: white;
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px; }
+
+.footer-container-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px; }
+
+.footer-container-logo-image {
+  width: 30%;
+  display: flex;
+  justify-content: center; }
+
+.website-logo-container-logo {
+  width: 30%; }
+
+.header__nav {
+  background-color: black;
+  /* height: 60px; */ }
+
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    display: flex; } }
+
+@media screen and (max-width: 1199px) {
+  .header__nav-container {
+    height: 0;
+    visibility: hidden;
+    transition: height 1s ease-out; }
+  .header__nav-container.is-open {
+    height: 100%;
+    visibility: visible; } }
+
+@media screen and (min-width: 1200px) {
+  .header__nav-container {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between; } }
+
+.header__nav-bar {
+  color: white;
+  list-style: none; }
+
+@media screen and (min-width: 1200px) {
+  .header__nav-bar {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.header__nav-link {
+  display: block;
+  font-family: Effra_Std_Rg;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: white; }
+
+.header__nav-link:hover,
+.header__logo:hover {
+  background-color: #2a2a2a; }
+
+.header__logo {
+  display: flex;
+  height: 100%;
+  padding: 0 10px; }
+
+.header__logo-image {
+  align-self: center;
+  display: block;
+  width: 44px;
+  fill: white; }
+
+@media screen and (min-width: 1200px) {
+  .header__login {
+    /* margin-left: auto;
+    display: flex; */ } }
+
+@media screen and (min-width: 1200px) {
+  .header__nav-toggle {
+    display: none; } }
+
+@media screen and (max-width: 1199px) {
+  .header__main-bar {
+    display: flex;
+    justify-content: space-between; } }
+
+.main__hero {
+  position: relative;
+  background-image: url("../images/bestof.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: inherit;
+  background-color: blue;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  display: block;
+  height: 740px; }
+
+.main__hero-headline {
+  background-color: #FFF;
+  width: 350px;
+  position: absolute;
+  bottom: 7%;
+  left: 5%; }
+
+@media screen and (max-width: 1199px) {
+  .main__hero-headline {
+    width: auto;
+    position: relative;
+    left: 0;
+    bottom: 0; } }
+
+.main__hero-headline-eyebrow {
+  font-family: Effra_Std_Bd;
+  background-color: #03fc96;
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  align-items: center; }
+
+.main__hero-headline-eyebrow-image {
+  padding-right: 10px; }
+
+.main__hero-headline-eyebrow-label {
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.main__hero-headline-title {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.main__hero-headline-title-text {
+  font-family: Anton-Rg;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 56px;
+  font-size: 50px;
+  word-spacing: -3px;
+  font-weight: 600; }
+
+.main__hero-headline-title-hr {
+  border: 5px solid black;
+  background-color: black;
+  width: 45px;
+  display: inline-block; }
+
+.main__hero-headline-eyebrow,
+.main__hero-headline-title {
+  padding-left: 28px;
+  padding-right: 28px; }
+
+@media screen and (max-width: 1199px) {
+  .main__hero-headline-eyebrow,
+  .main__hero-headline-title {
+    padding-left: 40px;
+    padding-right: 40px; } }
+
+.main__hero-credit {
+  color: white;
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px; }
+
+.news-block-space {
+  margin: 40px 0px; }
+
+.news-block-space-block {
+  /*height: 300px;*/
+  width: 80%;
+  margin: 21px; }
+
+.news-block-space-block-visual-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+@media screen and (max-width: 1199px) {
+  .news-block-space-block-visual-container {
+    flex-direction: column; } }
+
+@media screen and (max-width: 1199px) {
+  .news-block-space-block-visual-container + .news-block-space-block-visual-container {
+    flex-direction: column-reverse; } }
+
+.news-block-space-block:nth-child(odd) .news-block-space-block-visual-container {
+  flex-direction: row-reverse; }
+
+.news-block-space-block-visual-container-text {
+  /*original format*/
+  /*width: 45%;
+  padding: 3px;
+  margin: 10px 0;
+  float: right;
+  font-size: 30px;
+  font-family: Effra_Std_Bd;*/
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  margin-left: 8px;
+  font-size: 40px;
+  font-family: Effra_Std_Bd; }
+
+.news-block-space-block-visual-container-text > h3 {
+  text-transform: uppercase;
+  font-family: Anton-Rg;
+  margin-bottom: 20px;
+  line-height: 50px;
+  word-spacing: -3px;
+  font-weight: 600; }
+
+.news-block-space-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.news-block-space-title {
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 15px;
+  font-size: 35px;
+  color: black;
+  margin: 0 auto;
+  padding: 20px 5px;
+  width: auto;
+  height: auto; }
+
+h3, p {
+  margin: 0; }
+
+p {
+  font-family: Effra_Std_Rg;
+  font-size: 15px; }
+
+.news-block-space-block-visual-container-image > img {
+  height: auto;
+  width: 100%;
+  margin-right: 10px; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  /* removes border padding */ }
+
+main {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 720px; }
+
+h1, h2 {
+  margin: 0px; }
+
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+@font-face {
+  font-family: OPTIAlpine;
+  src: url(../../assets/fonts/OPTIAlpine-Bold.otf); }
+
+@font-face {
+  font-family: Effra_Std_Rg;
+  src: url(../../assets/fonts/Effra_Std_Rg.ttf); }
+
+@font-face {
+  font-family: Effra_Std_Bd;
+  src: url(../../assets/fonts/Effra_Std_Bd.ttf); }
+
+@font-face {
+  font-family: HARVATS;
+  src: url(../../assets/fonts/HARVATS.ttf); }
+
+@font-face {
+  font-family: Anton-Rg;
+  src: url(../../assets/fonts/Anton-Regular.ttf); }
+
+.header__nav {
+  background-color: black;
+  /* height: 60px; */ }
+
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    display: flex; } }
+
+@media screen and (max-width: 1199px) {
+  .header__nav-container {
+    height: 0;
+    visibility: hidden;
+    transition: height 1s ease-out; } }
+
+@media screen and (min-width: 1200px) {
+  .header__nav-container {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between; } }
+
+.header__nav-container.is-open {
+  height: 100%;
+  visibility: visible; }
+
+.header__nav-bar {
+  color: white;
+  list-style: none; }
+
+@media screen and (min-width: 1200px) {
+  .header__nav-bar {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.header__nav-link {
+  display: block;
+  font-family: Effra_Std_Rg;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: white; }
+
+.header__nav-link:hover, .header__logo:hover {
+  background-color: #2a2a2a; }
+
+.header__logo {
+  display: flex;
+  height: 100%;
+  padding: 0 10px; }
+
+.header__logo-image {
+  align-self: center;
+  display: block;
+  width: 44px;
+  fill: white; }
+
+@media screen and (min-width: 1200px) {
+  .header__login {
+    /* margin-left: auto;
+      display: flex; */ } }
+
+@media screen and (min-width: 1200px) {
+  .header__nav-toggle {
+    display: none; } }
+
+@media screen and (max-width: 1199px) {
+  .header__main-bar {
+    display: flex;
+    justify-content: space-between; } }
+
+.content-hero {
+  background-image: url("https://img.bleacherreport.net/cms/media/image/cc/23/51/16/78ff/41b3/9eee/290b12dbbb85/crop_exact_GettyImages-1180778918.jpg?h=585&q=90&w=876");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: inherit;
+  background-color: blue;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif; }
+
+.footer {
+  margin-top: 80px;
+  display: flex;
+  background-color: black;
+  height: 300px; }
+
+article {
+  margin-top: 120px;
+  left: 5%;
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  height: 45%;
+  bottom: 7%; }
+
+.outer-container {
+  display: block; }
+
+.content-hero {
+  display: block;
+  height: 740px; }
+
+.top-news {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex; }
+
+@media screen and (max-width: 1199px) {
+  .top-news {
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+.top-news-links {
+  width: auto;
+  height: auto;
+  margin: 0 auto; }
+
+@media screen and (max-width: 1199px) {
+  .top-news-links {
+    margin-left: 0; } }
+
+.top-news-links-headlines {
+  font-family: Effra_Std_Rg;
+  display: inline-block; }
+
+@media screen and (max-width: 1199px) {
+  .top-news-links-headlines {
+    display: block;
+    display: flex;
+    flex-direction: column; } }
+
+.top-news-links-label {
+  font-family: Effra_Std_Bd;
+  background-color: #03fc96;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-right: 33px; }
+
+.track {
+  text-decoration: none;
+  vertical-align: middle;
+  margin-right: 40px;
+  color: black; }
+
+.track + .track {
+  padding-left: 40px;
+  border-left: 1px solid #000; }
+
+@media screen and (max-width: 1199px) {
+  .track + .track {
+    border-left: 0;
+    padding: 0; } }
+
+.track:hover {
+  color: blue; }
+
+.trending {
+  min-height: 400px;
+  background-color: black; }
+
+.trending-content {
+  display: flex;
+  flex-wrap: wrap; }
+
+.trending-content-title {
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 40px;
+  color: white;
+  margin: 0 auto;
+  padding: 50px 5px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center; }
+
+@media screen and (max-width: 768px) {
+  .trending-content-title {
+    letter-spacing: 10px; } }
+
+@media screen and (max-width: 499px) {
+  .trending-content-title {
+    letter-spacing: 8px;
+    font-size: 32px; } }
+
+.trending-content-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-wrap: wrap; }
+
+@media screen and (max-width: 889px) {
+  .trending-content-content {
+    flex-direction: column; } }
+
+.trending-content-content-holder {
+  min-height: 150px;
+  width: 30%;
+  background-color: #FFF;
+  margin-bottom: 20px;
+  height: fit-content; }
+
+@media screen and (max-width: 889px) {
+  .trending-content-content-holder {
+    align-self: center;
+    width: 85%; } }
+
+.trending-content-content-holder-title {
+  text-transform: uppercase;
+  font-family: Anton-Rg;
+  line-height: 50px;
+  word-spacing: -3px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 36px;
+  transition: max-height 0.5s, overflow 0s; }
+
+.trending-content-content-holder--hidden {
+  display: none; }
+
+.embed-tweet {
+  padding: 10px 7px; }
+
+@media screen and (max-width: 1199px) {
+  .embed-tweet {
+    display: flex;
+    justify-content: center; } }
+
+.video-carousel {
+  min-height: 500px;
+  background-color: #5ceefe;
+  padding-bottom: 80px;
+  position: relative; }
+
+.video-carousel-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 100px; }
+
+.video-carousel-content-title {
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 35px;
+  color: black;
+  margin: 0 auto;
+  padding: 20px 5px;
+  width: auto;
+  height: auto; }
+
+.video-carousel-show-more {
+  width: 10px;
+  height: 4px;
+  display: none; }
+
+.video-carousel-content-holders {
+  display: flex; }
+
+.video-carousel-content-holders-block {
+  display: flex;
+  position: relative;
+  transition: left .4s;
+  left: 0; }
+
+.video-carousel-content-holders-block-video-holder {
+  width: inherit;
+  height: inherit;
+  background-color: black; }
+
+.video-carousel-content-holders-block-video {
+  width: 611px;
+  height: 450px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.video-carousel-content-holders-arrow {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  position: absolute;
+  z-index: 1;
+  align-self: center; }
+
+.video-carousel-content-holders-arrow.left {
+  left: 2%; }
+
+.video-carousel-content-holders-arrow.right {
+  right: 2%; }
+
+.video-carousel-content-holders-arrow.disabled {
+  background-color: white; }
+
+.video-carousel-content-holders-icons-components {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+  margin-right: 10px;
+  display: none; }
+
+iframe {
+  width: inherit;
+  height: inherit; }
+
+.video-carousel-content-holders-block-video-title {
+  width: inherit;
+  height: 30px;
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+  position: absolute;
+  text-align: center;
+  padding-top: 5px;
+  box-sizing: border-box; }
+
+.content-hero {
+  background-image: url("https://img.bleacherreport.net/cms/media/image/cc/23/51/16/78ff/41b3/9eee/290b12dbbb85/crop_exact_GettyImages-1180778918.jpg?h=585&q=90&w=876");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: inherit;
+  background-color: blue;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif; }
+
+.footer {
+  margin-top: 80px;
+  display: flex;
+  background-color: black;
+  height: 300px; }
+
+article {
+  margin-top: 120px;
+  left: 5%;
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  height: 45%;
+  bottom: 7%; }
+
+.outer-container {
+  display: block; }
+
+.content-hero {
+  display: block;
+  height: 740px; }
