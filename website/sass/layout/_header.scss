@@ -4,47 +4,36 @@
   &__nav {
     background-color: black;
     /* height: 60px; */
-  }
-
   @media screen and (min-width: 1200px) {
-    .header__nav {
       display: flex;
     }
   }
 
-
   &__nav-container {
 
-  }
   @media screen and (max-width: 1199px) {
-    .header__nav-container {
       height: 0;
       visibility: hidden;
       transition: height 1s ease-out;
     }
 
-    &__nav-container.is-open {
+  @media screen and (min-width: 1200px) {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &.is-open {
       height: 100%;
       visibility: visible;
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    .header__nav-container {
-      flex-basis: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-
   &__nav-bar {
     color: white;
     list-style: none;
-  }
 
   @media screen and (min-width: 1200px) {
-    .header__nav-bar {
       display: flex;
       flex-wrap: wrap;
     }
@@ -80,8 +69,9 @@
     fill: white;
   }
 
+  &__login {
+    
   @media screen and (min-width: 1200px) {
-    .header__login {
       /* margin-left: auto;
       display: flex; */
     }
@@ -89,18 +79,14 @@
 
   &__nav-toggle {
 
-  }
     @media screen and (min-width: 1200px) {
-      .header__nav-toggle {
         display: none;
       }
     }
 
   &__main-bar {
 
-  }
   @media screen and (max-width: 1199px) {
-    .header__main-bar {
       display: flex;
       justify-content: space-between;
     }
@@ -113,7 +99,7 @@
 .header__nav {
   background-color: black;
   /* height: 60px; */
-}
+
 /*
 @media screen and (min-width: 1200px) {
   .header__nav {
