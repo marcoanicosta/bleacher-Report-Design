@@ -1,0 +1,117 @@
+.video-carousel {
+  min-height: 500px;
+  background-color: #5ceefe;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+
+.video-carousel-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 100px;
+
+}
+
+.video-carousel-content-title {
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 35px;
+  color: black;
+  margin: 0 auto;
+  padding: 20px 5px;
+  width: auto;
+  height: auto;
+}
+
+.video-carousel-show-more {
+  width: 10px;
+  height: 4px;
+  display: none;
+}
+
+.video-carousel-content-holders {
+  display: flex;
+}
+.video-carousel-content-holders-block {
+  display: flex;
+  position: relative;
+  transition: left .4s;
+  left: 0;
+}
+
+.video-carousel-content-holders-block-video-holder {
+  width: inherit;
+  height: inherit;
+  background-color: black;
+}
+
+.video-carousel-content-holders-block-video {
+  width: 611px;
+  height: 450px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.video-carousel-content-holders-arrow {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  position: absolute;
+  z-index: 1;
+  align-self: center;
+}
+
+.video-carousel-content-holders-arrow.left{
+  left: 2%;
+}
+.video-carousel-content-holders-arrow.right {
+  right: 2%;
+}
+.video-carousel-content-holders-arrow.disabled {
+  background-color: white;
+}
+
+.video-carousel-content-holders-icons {
+
+}
+
+.video-carousel-content-holders-icons-components {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+  margin-right: 10px;
+  display: none;
+}
+.video-carousel-content-holders-icons.center {
+
+}
+
+iframe {
+  width: inherit;
+  height: inherit;
+}
+.video-carousel-content-holders-block-video-title {
+  width: inherit;
+  height: 30px;
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+  position: absolute;
+  text-align: center;
+  padding-top: 5px;
+  box-sizing: border-box;
+}

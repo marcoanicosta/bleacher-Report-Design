@@ -1,0 +1,101 @@
+.main__hero {
+  position: relative;
+  background-image: url("../images/bestof.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: inherit;
+  background-color: blue;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  display: block;
+  height: 740px;
+}
+
+
+.main__hero-headline {
+ background-color: #FFF;
+ width: 350px;
+ position: absolute;
+ bottom: 7%;
+ left: 5%;
+}
+@media screen and (max-width: 1199px) {
+  .main__hero-headline {
+    width: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
+.main__hero-headline-eyebrow {
+  font-family: Effra_Std_Bd;
+  background-color: #03fc96;
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  align-items: center;
+}
+
+.main__hero-headline-eyebrow-image {
+  padding-right: 10px;
+}
+
+.main__hero-headline-eyebrow-label {
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.main__hero-headline-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+.main__hero-headline-title-text {
+  font-family: Anton-Rg;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 56px;
+  font-size: 50px;
+  word-spacing: -3px;
+  font-weight: 600;
+}
+
+.main__hero-headline-title-hr {
+ border: 5px solid black;
+ background-color: black;
+ width: 45px;
+ display: inline-block;
+}
+
+.main__hero-headline-eyebrow,
+.main__hero-headline-title {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+@media screen and (max-width: 1199px) {
+  .main__hero-headline-eyebrow,
+  .main__hero-headline-title {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.main__hero-credit {
+  color: white;
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  font-family: Effra_Std_Rg;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px;
+}
