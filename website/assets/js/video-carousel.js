@@ -11,39 +11,77 @@ console.log(carouselLeft)
 
 var maxOffset = videos.offsetWidth - window.innerWidth + videoOffset/2;
 var videoWidth = video.offsetWidth
+
 next = 0
 num = 0
+
+
+
+function getContainer(className) {
+  var container = document.querySelector(className);
+
+  return function(index) {
+    var current = container.children[index]
+    var { x, width } = current.getBoundingClientRect()
+    var elementCenter = x + width / 2
+    return elementCenter
+  }
+}
+
+function getTransition(_to) {
+  return function(_from) {
+    var transition = _to - _from
+    return transition
+  }
+}
+debugger
+var screenWidthCenter =  window.innerWidth / 2
+var getVideoCenter = getContainer('.video-carousel-content-holders-block')
+var firstCenter = getVideoCenter(1)
+
+var transitionToTheCenter = getTransition(screenWidthCenter)
+var transition = transitionToTheCenter(firstCenter)
+
+function (index)
+this.index = 0
 
 leftArrow.addEventListener('click', function(){
 
 
-    if (next === 1) {
-        if (carouselLeft < 0) {
-        carouselLeft += videoOffset/2
-        videos.style.left = carouselLeft + 'px';
-        next -=1;
-        }
-    } else if (carouselLeft < 0) {
-      carouselLeft += videoOffset
-      videos.style.left = carouselLeft + 'px';
-      next -=1;
-      }
+})
 
-
-    if (carouselLeft === 0) {
-      leftArrow.classList.add('disabled');
-    } else {
-      leftArrow.classList.remove('disabled');
-    }
-    if (carouselLeft < -maxOffset) {
-      rightArrow.classList.add('disabled');
-    } else {
-      rightArrow.classList.remove('disabled');
-    }
-    console.log(carouselLeft)
-    console.log(next);
-});
-
+// /
+// leftArrow.addEventListener('click', function(){
+//
+//
+//     if (next === 1) {
+//         if (carouselLeft < 0) {
+//         carouselLeft += videoOffset/2
+//         videos.style.left = carouselLeft + 'px';
+//         next -=1;
+//         }
+//     } else if (carouselLeft < 0) {
+//       carouselLeft += videoOffset
+//       videos.style.left = carouselLeft + 'px';
+//       next -=1;
+//       }
+//
+//
+//     if (carouselLeft === 0) {
+//       leftArrow.classList.add('disabled');
+//     } else {
+//       leftArrow.classList.remove('disabled');
+//     }
+//     if (carouselLeft < -maxOffset) {
+//       rightArrow.classList.add('disabled');
+//     } else {
+//       rightArrow.classList.remove('disabled');
+//     }
+//     console.log(carouselLeft)
+//     console.log(next);
+// });
+//
+// */
 
 
 var rightArrow = document.querySelector('.video-carousel-content-holders-arrow.right');
