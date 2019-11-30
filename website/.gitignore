@@ -1,0 +1,6 @@
+# Ignore files
+
+# Ignore folders
+node_modules/
+
+# Ignore all
