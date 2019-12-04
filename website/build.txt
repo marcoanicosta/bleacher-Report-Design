@@ -1,1 +1,6 @@
 To do list
+1. button styling
+2. Javascript button
+3. carousel script
+4. Second carousel
+5. SCSS files and folders
